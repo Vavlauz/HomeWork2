@@ -1,0 +1,31 @@
+{
+  "plugins": [
+    "@typescript-eslint",
+    "@mylint",
+    "@mylint/foo",
+    "prettier",
+    "unicorn",
+    "import"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/unicorn"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-debugger": "off",
+    "no-console": 0,
+    "unicorn/prevent-abbreviations": "off"
+  }
+}
